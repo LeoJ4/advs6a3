@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title> jquery3 </title>
+	<script type="text/javascript" src="jquery1.js"></script>
+
+	<script>
+	$(document).ready("button").click(function(){
+	$("li").each(function(index,value){
+		$(this).prepend("<b>" + index);
+		$(this).append("</b>");
+	}
+	)
+	});
+
+	</script>
+
+</head>
+
+<body>
+
+<ul>
+<li> jquery is fun</li>
+<li> jquery is easy</li>
+<li> jquery is cool</li>
+</ul>
+
+<input type="button" id="btn" value="Trigger jquery" >
+
+</body>
+
+</html>
